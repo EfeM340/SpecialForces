@@ -1,0 +1,30 @@
+public class Main {
+    public static void main(String[] args) {
+
+        int firstNumber = 54;
+        int secondNumber = 27;
+
+        System.out.println("Dört İşlem");
+        System.out.println(firstNumber * secondNumber);
+        System.out.println(firstNumber / secondNumber);
+        System.out.println(firstNumber + secondNumber);
+        System.out.println(firstNumber - secondNumber);
+        System.out.println("----------------");
+        System.out.println("Üçgen Alanı ve çevresi");
+
+        int taban =13;
+        int height =12;
+
+        System.out.println((taban * height) / 2);
+        System.out.println(taban * 3);
+        System.out.println("----------------");
+        System.out.println("Dairenin Alanı ve Çevresi");
+
+        int r = 8;
+        int kuvvet = 2;
+        double  sonuc = Math.pow(r,kuvvet);
+
+        System.out.println(+sonuc *3.14);
+        System.out.println(r * 2 * 3.14);
+    }
+}
