@@ -1,0 +1,30 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+
+        // Kimlik numarasını al
+        System.out.print("Kimlik numarasını girin (11 haneli): ");
+        String kimlikNo = scanner.nextLine();
+
+        // Kimlik numarasının uzunluğunu kontrol et
+        if (kimlikNo.length() == 11 ) {
+
+        } else {
+            System.out.println("Kimlik numarası hatalı! Lütfen 11 haneli bir sayı girin.");
+            return;
+        }
+
+        // Rastgele kan grubunu belirle
+        String[] kanGruplari = {"A", "B", "AB", "0"};
+        int randomIndex = random.nextInt(kanGruplari.length);
+        String randomKanGrubu = kanGruplari[randomIndex];
+
+        System.out.println("Kan grubunuz: " + randomKanGrubu);
+
+        scanner.close();
+    }
+}
